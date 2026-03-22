@@ -120,6 +120,43 @@
         color: black;
       }
 
+      /* --- Footer Styling --- */
+      footer {
+        background-color: #111;
+        color: #888;
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        margin-bottom: 20px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .footer-links a {
+        color: #bbb;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #007bff;
+      }
+
+      .copyright {
+        border-top: 1px solid #222;
+        padding-top: 20px;
+      }
+
       /* Mobile Adjustments */
       @media (max-width: 768px) {
         nav {
@@ -127,18 +164,21 @@
         }
         .nav-links {
           display: none;
-        } /* Basic hide for now */
+        }
         .hero-content h1 {
           font-size: 2.5rem;
         }
         .cta-buttons {
           flex-direction: column;
         }
+        .footer-links {
+          flex-direction: column;
+          gap: 10px;
+        }
       }
     </style>
   </head>
   <body>
-    <!-- Navbar Section -->
     <nav>
       <a href="#" class="logo">BRAND.</a>
       <ul class="nav-links">
@@ -149,7 +189,6 @@
       </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <h1>Design Your Future</h1>
@@ -163,5 +202,17 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-container">
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+        <div class="copyright">&copy; 2026 BRAND. All rights reserved.</div>
+      </div>
+    </footer>
   </body>
 </html>
