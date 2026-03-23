@@ -3,7 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Our Products | BRAND.</title>
+    <style>
+      /* Reusing your core styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        position: sticky; /* Changed to sticky so it stays at top on scroll */
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        z-index: 1000;
+        background: #111; /* Solid background for product page readability */
+      }
+
+      .logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .nav-links a:hover {
+        color: #007bff;
+      }
+
+      /* --- Product Section --- */
+      .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        color: #333;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .product-card {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-image {
+        width: 100%;
+        height: 200px;
+        background: #f0f0f0;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+      }
+
+      .btn-buy {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      /* Footer Reused */
+      footer {
+        background-color: #111;
+        color: #888;
+        padding: 40px 20px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .footer-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      .footer-links a {
+        color: #bbb;
+        text-decoration: none;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">BRAND.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html" style="color: #007bff">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Our Collection</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">Product Image</div>
+          <h3>Digital Asset 01</h3>
+          <p>A simple description of what this product does.</p>
+          <a href="#" class="btn-buy">View Details</a>
+        </div>
+        <div class="product-card">
+          <div class="product-image">Product Image</div>
+          <h3>Digital Asset 02</h3>
+          <p>A simple description of what this product does.</p>
+          <a href="#" class="btn-buy">View Details</a>
+        </div>
+        <div class="product-card">
+          <div class="product-image">Product Image</div>
+          <h3>Digital Asset 03</h3>
+          <p>A simple description of what this product does.</p>
+          <a href="#" class="btn-buy">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <div class="copyright">&copy; 2026 BRAND. All rights reserved.</div>
+    </footer>
+  </body>
 </html>
